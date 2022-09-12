@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: 0 always if exits properly
+ */
+int main(void)
+{
+	int i;
+
+	for (i = 10; i < 20; i++)
+	{
+		putchar((i % 10) + '0');
+		if (1 != 19)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
+}
+
