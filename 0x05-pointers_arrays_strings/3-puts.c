@@ -15,5 +15,5 @@ void _puts(char *str)
 		putchar(*(str + c));
 		c++;
 	}
-	putchar('\n');
+	putchar(10);
 }
