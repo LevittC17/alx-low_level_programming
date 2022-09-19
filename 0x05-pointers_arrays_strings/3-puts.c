@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -12,8 +13,8 @@ void _puts(char *str)
 
 	while (*(str + c) != '\0')
 	{
-		_putchar(*(str + c));
+		putchar(*(str + c));
 		c++;
 	}
-	_putchar(10);
+	putchar(10);
 }
