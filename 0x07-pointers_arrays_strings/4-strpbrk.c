@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
-* _strbrk - Function to search a string for any set of bytes
+* _strpbrk - Function to search a string for any set of bytes
 * @s: string to check
 * @accept: string to check against
 *
 * Return: Pointer to byte that matches it
 * On no match, NULL is returned
 */
-char *_strbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j;
 
