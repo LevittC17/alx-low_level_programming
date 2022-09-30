@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+/**
+* main - Prints the number of arguments
+* @argc: The argument count
+* @argvL The array of arguments
+*
+* Return: On success 0
+*/
+int main(int __attribute__((__unused__)) argc, char *argv[])
+{
+	printf("%d\n", argc);
+
+	return (0);
+}
