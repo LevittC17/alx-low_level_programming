@@ -8,7 +8,9 @@
 */
 int main(int argc, char *argv[])
 {
-	printf("argc = %d\n", argc);
+	int i;
+
+	printf("argv[%d] = %s\n", i, argv[i]);
 
 	return (0);
 }
