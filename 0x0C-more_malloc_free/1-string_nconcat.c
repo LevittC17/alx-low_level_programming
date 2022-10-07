@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
-* string_nconcat - Concatenate two strings
-* @s1: first string
-* @s2: second string
-* @n: max number of bytes of s2 to concat to s1
-*
-* Return: On success, a pointer to the concatenated mem address
-* On error, NULL is returned
-*/
+ * string_nconcat - Concatenates two strings using at
+ *                  most an inputted number of bytes.
+ * @s1: The first string.
+ * @s2: The second string.
+ * @n: The maximum number of bytes of s2 to concatenate to s1.
+ *
+ * Return: If the function fails - NULL.
+ *         Otherwise - a pointer to the concatenated space in memory.
+ */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *concat;
@@ -23,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; s1[i]; i++)
 		len++;
 
-	concat = malloc(sizeof(char) * (len + i));
+	concat = malloc(sizeof(char) * (len + 1));
 
 	if (concat == NULL)
 		return (NULL);
@@ -31,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len = 0;
 
 	for (i = 0; s1[i]; i++)
-		concat[len++] = s2[i];
+		concat[len++] = s1[i];
 
 	for (i = 0; s2[i] && i < n; i++)
 		concat[len++] = s2[i];
