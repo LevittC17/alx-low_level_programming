@@ -1,5 +1,4 @@
-#include "LINKEDLIST_H"
-#include <string.h>
+#include "lists.h"
 
 /**
  * add_node - Adds a new node at the beginning
